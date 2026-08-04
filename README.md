@@ -1,13 +1,19 @@
-# mcp-cisa-kev
+# @pipeworx/cisa-kev
 
-CISA KEV MCP.
+CISA [Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) catalog MCP — actively exploited CVEs with required-action dates. Keyless. Cached 1h in-pack.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
+- `catalog()` — full KEV catalog (metadata + entries)
+- `entry(cve_id)` — single KEV entry by CVE id
+- `vendors()` — list distinct vendors with entries
+- `recent(days)` — entries added in the last N days
+
+## Data source
+
+`https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json`
 
 ## Quick Start
 
@@ -23,7 +29,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +53,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
