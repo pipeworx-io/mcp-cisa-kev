@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/cisa-kev",
   "title": "Cisa Kev",
-  "description": "CISA Known Exploited Vulnerabilities catalog",
-  "version": "0.1.0",
+  "description": "CISA KEV MCP.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/cisa-kev",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-cisa-kev",

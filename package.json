@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-cisa-kev",
-  "version": "0.1.0",
-  "description": "CISA Known Exploited Vulnerabilities catalog",
+  "version": "0.1.1",
+  "description": "CISA KEV MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-cisa-kev": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "cisa-kev"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-cisa-kev"
+    "url": "git+https://github.com/pipeworx-io/mcp-cisa-kev.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-7e4b4dd9b607827ca49c7e7ffd3b3fe5f2e52a0a3d20c86032778dd9083fe549",
+    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
   }
 }
