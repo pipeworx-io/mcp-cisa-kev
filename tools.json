@@ -1,0 +1,46 @@
+[
+  {
+    "name": "catalog",
+    "description": "Full KEV catalog (metadata + entries).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "entry",
+    "description": "Single KEV entry by CVE id.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "cve_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "cve_id"
+      ]
+    }
+  },
+  {
+    "name": "vendors",
+    "description": "Return all distinct vendor/project names in the CISA KEV catalog sorted by entry count descending, with per-vendor counts. Useful for identifying which vendors have the most actively-exploited vulnerabilities.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "recent",
+    "description": "Entries added in the last N days.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "days": {
+          "type": "number",
+          "description": "1-365 (default 30)"
+        }
+      }
+    }
+  }
+]
