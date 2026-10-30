@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-cisa-kev",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CISA KEV MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -28,6 +28,6 @@
     "slug": "cisa-kev",
     "gatewaySlug": "cisa-kev",
     "sourceHash": "v1-d82c0e3a3638c89c0a0ac77364502deb3c201756b6c6b100b25af854d0a5a776",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceCommit": "06a6b405041923c5ddf2ac2436e7c049e635f464"
   }
 }
